@@ -6,10 +6,10 @@ local spring = {}
 
 spring.__index = spring
 
-function spring.new(dampling, friction)
+function spring.new(damping, friction)
 	local self = setmetatable({
 		-- Hooks Constants
-		k = dampling or 0.3,
+		k = damping or 0.3,
 		f = friction or 0.5,
 		
 		-- Vectors
